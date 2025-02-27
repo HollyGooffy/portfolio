@@ -1,0 +1,33 @@
+@use 'helpers' as *;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: auto;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: auto;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
+  font-style: auto;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: auto;
+  font-display: swap;
+}

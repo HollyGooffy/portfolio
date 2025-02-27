@@ -1,0 +1,52 @@
+@use '../helpers' as *;
+
+.button{
+  color: var(--white);
+  padding: rem(20) rem(52);
+  border-radius: rem(8);
+  background-color: var(--black-15);
+  border: 1px solid var(--white);
+  display: inline-flex;
+  justify-content: center;
+  white-space: nowrap;
+  min-width: rem(244);
+  text-decoration: none;
+  font-size: rem(18);
+  margin-top: rem(30);
+  transition-duration: 200ms;
+  font-family: "Montserrat", sans-serif;
+
+  &:hover{
+    border: 1px solid var(--accent-55);
+    color: var(--accent-55);
+  }
+
+  @include mobile{
+    padding: rem(22) rem(109);
+    width: 100%;
+  }
+}
+
+.btn-centre{
+  margin-top: rem(30);
+  display: flex;
+  justify-content: center;
+
+  @include mobile{
+    display:none;
+    opacity: 0;
+  }
+}
+
+.btn-more{
+  padding: rem(20) rem(28);
+
+  @include tablet{
+    width: 100%;
+  }
+}
+
+.arrow-icon{
+  margin-left: rem(15);
+  align-items: center;
+}
