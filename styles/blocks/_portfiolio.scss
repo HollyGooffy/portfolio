@@ -1,0 +1,43 @@
+@use '../helpers/index' as *;
+
+.portfolio {
+  &__inner {
+
+
+    &-title {
+      @include fluid-text(70, 40);
+      padding-bottom: rem(80);
+
+      @include tablet {
+        padding-bottom: rem(40);
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet{
+      justify-content: center;
+      min-height: rem(174);
+    }
+
+    &-item {
+
+      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: rem(33);
+
+      @include tablet {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      @include mobile {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+    }
+  }
+
+}
+

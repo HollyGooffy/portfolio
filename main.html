@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikita Bykovets - Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <script src="scripts/particles-js.js" defer></script>
+    <link rel="stylesheet" href="stylesain.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+<main>
+    <header class="header container">
+        <div class="header__inner">
+            <a href="index.html" class="header__inner-logo h1">ES</a>
+            <div class="header__inner-navbar">
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="#name" class="header__menu-link h5">About</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#skills" class="header__menu-link h5">Skills</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#portfolio" class="header__menu-link h5">Portfolio</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#resume" class="header__menu-link h5">Resume</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#footer" class="header__menu-link h5">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <header class="mob-header">
+        <a href="index.html" class="mob-header__brand h1">ES</a>
+
+        <button class="mob-header__toggler" aria-label="Open menu">
+            <div class="mob-header__toggler-inner"></div>
+        </button>
+
+        <nav class="mob-header__nav" aria-hidden="true">
+            <ul class="mob-header__list">
+                <li class="mob-header__item"><a href="#name" class="mob-header__link">About</a></li>
+                <li class="mob-header__item"><a href="#skills" class="mob-header__link">Skills</a></li>
+                <li class="mob-header__item"><a href="#portfolio" class="mob-header__link">Portfolio</a></li>
+                <li class="mob-header__item"><a href="#resume" class="mob-header__link">Resume</a></li>
+                <li class="mob-header__item"><a href="#footer" class="mob-header__link">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="name container" id="name">
+        <div class="name__text">
+            <h1 class="h1 name__text-main"><span class="accent-color">Hello world!</span> My name is <br> Nikita
+                Bykovets</h1>
+            <div class="name__image-dop ">
+                <img src="imagesmage%201.jpg" alt="#">
+            </div>
+            <h3 class="h3 name__text-subtitle">FullStack Developer Spring + React</h3>
+            <a href="#skills" class="name__text-btn button">Let’s check my stack</a>
+        </div>
+        <div class="name__image">
+            <img src="imagesmage%201.jpg" alt="#" width="508" height="508">
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skills__inner container">
+            <h1 class="skills__inner-title">Personal <span class="accent-color">skills</span></h1>
+            <div class="skills__card">
+                <div class="skills__card-item">
+                    <div class="card">
+                        <div class="card__inner">
+                            <i class="card__icon">icon</i>
+                            <div class="cards__content">
+                                <h5 class="card__content-title h5">Backend Java</h5>
+                                <h6 class="card__content-text h6"><span class="fw-500">Technologies</span>: Spring
+                                    Framework, Spring Web, Spring Boot, Spring JPA, PostgreSQL</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__inner">
+                            <i class="card__icon">icon</i>
+                            <div class="cards__content">
+                                <h5 class="card__content-title h5">Backend JavaScript</h5>
+                                <h6 class="card__content-text h6"><span class="fw-500">Technologies</span>: Node.JS,
+                                    TypeScript, Express,
+                                    TRPC, PostgreSQL, Prisma , Jest</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__inner">
+                            <i class="card__icon">icon</i>
+                            <div class="cards__content">
+                                <h5 class="card__content-title h5">Frontend</h5>
+                                <h6 class="card__content-text h6"><span class="fw-500">Technologies</span>: HTML, CSS,
+                                    SСSS, Bootstrap, JavaScript, React, React Native, React Router,
+                                    Vite</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__inner">
+                            <i class="card__icon">icon</i>
+                            <div class="cards__content">
+                                <h5 class="card__content-title h5">Devops</h5>
+                                <h6 class="card__content-text h6"><span class="fw-500">Technologies</span>: Kubernetes,
+                                    AWS Cloud, Docker</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__soft">
+                        <div class="card__soft-content">
+                            <h5 class="soft__content-title h5">Soft skills</h5>
+                            <h6 class="soft__content-text h6">I have time management skills</h6>
+                            <h6 class="soft__content-text h6">I know how to solve conflict situations</h6>
+                            <h6 class="soft__content-text h6">I am motivated to improve my skills</h6>
+                            <h6 class="soft__content-text h6">I know how to work in a team</h6>
+                            <h6 class="soft__content-text h6">I have time management skills</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio__inner container">
+            <h1 class="portfolio__inner-title">My <span class="accent-color">portfolio</span></h1>
+            <div class="portfolio__card">
+                <div class="portfolio__card-item">
+                    <a href="https://github.com/" target="_blank" class="card card__link">
+                        <div class="card__inner">
+                            <i class="card__icon">icon</i>
+                            <div class="cards__content">
+                                <h5 class="card__content-title h5">Webchat</h5>
+                                <h6 class="card__content-text h6"><span class="fw-500">Technologies</span>: Go,
+                                    Typescript, React,
+                                    Jest, Vite, Docker, PostgreSQL, SASS</h6>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="card card__link">
+                        <div class="card__inner">
+                            <i class="card__icon">icon</i>
+                            <div class="cards__content">
+                                <h5 class="card__content-title h5">Prison control App </h5>
+                                <h6 class="card__content-text h6"><span class="fw-500">Technologies</span>: Spring Web,
+                                    Spring JPA,
+                                    Spring Rest, PostgreSQL, React, SASS</h6>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="card card__link">
+                        <div class="card__inner">
+                            <i class="card__icon">icon</i>
+                            <div class="cards__content">
+                                <h5 class="card__content-title h5">IdeaApp fullstack JavaScript</h5>
+                                <h6 class="card__content-text h6"><span class="fw-500">Technologies</span>: Node.js,
+                                    Typescript, React Router, React, Jest, Vite, Docker, PostgreSQL, SASS</h6>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="card card__link">
+                        <div class="card__inner">
+                            <i class="card__icon">icon</i>
+                            <div class="cards__content">
+                                <h5 class="card__content-title h5">Tinkoff parking app</h5>
+                                <h6 class="card__content-text h6"><span class="fw-500">Technologies</span>: Spring Web,
+                                    Go, Telegram Api,
+                                    React, React native, PostgreSQL, Redis</h6>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="btn-centre-dop">
+                        <a href="https://github.com/" target="_blank" class="btn-more button">View more work<i
+                                class="material-symbols-outlined arrow-icon">
+                            arrow_right_alt
+                        </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-centre">
+                <a href="https://github.com/" class="btn-more btn-centre button">View more work<i
+                        class="material-symbols-outlined arrow-icon">
+                    arrow_right_alt
+                </i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume" id="resume">
+        <div class="resume__inner container">
+            <h1 class="resume__inner-title">Resume</h1>
+            <div class="resume__tree">
+                <div class="resume__tree-left">
+                    <h3 class="resume__tree-title accent-color">Education</h3>
+                    <div class="resume__container-card">
+                        <div class="resume__card">
+                            <div class="resume__card-inner">
+                                <h5 class="resume__card-inner-title">Bachelor of software engineer</h5>
+                                <h7 class="resume__card-inner-data">Perm State University (2023 - 2027)</h7>
+                                <h6 class="resume__card-inner-text">Higher education institution. IT Faculty, direction
+                                    of applied mathematics and computer science</h6>
+                            </div>
+                        </div>
+                        <div class="resume__card">
+                            <div class="resume__card-inner">
+                                <h5 class="resume__card-inner-title">Advanced training web design</h5>
+                                <h7 class="resume__card-inner-data">Perm State University (2025 - 2025)</h7>
+                                <h6 class="resume__card-inner-text">Advanced training web design: Figma, HTML, CSS,
+                                    JavaScript with framework</h6>
+                            </div>
+                        </div>
+                        <div class="resume__card">
+                            <div class="resume__card-inner">
+                                <h5 class="resume__card-inner-title">Software engineering track</h5>
+                                <h7 class="resume__card-inner-data">Perm State University (2026 - 2027)</h7>
+                                <h6 class="resume__card-inner-text">Specialty software engineer: gamedev, web
+                                    programmer, AI engineer</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume__tree-right">
+                    <h3 class="resume__tree-title accent-color">Job Experience</h3>
+                    <div class="resume__container-card">
+                        <div class="resume__card">
+                            <div class="resume__card-inner">
+                                <h5 class="resume__card-inner-title">Internship</h5>
+                                <h7 class="resume__card-inner-data">Tinkoff Bank (2026 - 2027)</h7>
+                                <h6 class="resume__card-inner-text">Internship with frontend React developer
+                                    responsibilities</h6>
+                            </div>
+                        </div>
+                        <div class="resume__card">
+                            <div class="resume__card-inner">
+                                <h5 class="resume__card-inner-title">Practice</h5>
+                                <h7 class="resume__card-inner-data">Tinkoff Bank (2027 - 2027)</h7>
+                                <h6 class="resume__card-inner-text">Practice for web developers in fullstack (Spring +
+                                    React)</h6>
+                            </div>
+                        </div>
+                        <div class="resume__card">
+                            <div class="resume__card-inner">
+                                <h5 class="resume__card-inner-title">Middle frontend developer</h5>
+                                <h7 class="resume__card-inner-data">Tinkoff Bank (2027 - 2028)</h7>
+                                <h6 class="resume__card-inner-text">Frontend developer. I’m happy</h6>
+                            </div>
+                        </div>
+                        <div class="resume__card">
+                            <div class="resume__card-inner">
+                                <h5 class="resume__card-inner-title">Coming soon...</h5>
+                                <h7 class="resume__card-inner-data">Unknown (2028 - 20xx)</h7>
+                                <h6 class="resume__card-inner-text">Unknown</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer container">
+            <div class="footer__inner ">
+                <h3 class="footer__inner-text">Ask me a <span class="accent-color">question</span> or invite <br> me for
+                    a cup of
+                    <span class="accent-color">coffee</span>
+                </h3>
+                <div class="footer__inner-socials">
+                    <ul class="footer__society">
+                        <li class="footer__society-item">
+                            <a href="https://github.com/HollyGooffy" target="_blank" class="society-list__link">
+                                <img src="icons/github.svg" alt="GitHub" class="society-list__icon">
+                            </a>
+                        </li>
+                        <li class="footer__society-item">
+                            <a href="https://t.me/El_CockFORpancakes" target="_blank" class="society-list__link">
+                                <img src="icons/tg.svg" alt="Telegram" class="society-list__icon">
+                            </a>
+                        </li>
+                        <li class="footer__society-item">
+                            <a href="https://steamcommunity.com/id/El_Sacerdot/" target="_blank"
+                               class="society-list__link">
+                                <img src="icons/steam.svg" alt="Steam" class="society-list__icon">
+                            </a>
+                        </li>
+                        <li class="footer__society-item">
+                            <a href="#" class="society-list__link">
+                                <img src="icons/discord.svg" alt="Discord" class="society-list__icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div id="particles-js">
+    <canvas class="particles-js-canvas-el" width="2657" height="1783" style="width: 100%; height: 100%;"></canvas>
+</div>
+</body>
+</html>

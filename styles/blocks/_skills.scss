@@ -1,0 +1,52 @@
+@use '../helpers/index' as *;
+
+.skills {
+
+  &__inner {
+    padding-top: rem(80);
+
+    &-title{
+      align-self: center;
+      @include fluid-text(70, 40)
+    }
+  }
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    padding-top: rem(80);
+
+    @include tablet{
+      padding-top: rem(40);
+    }
+
+    &-item {
+      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: rem(33);
+
+      @include tablet{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      @include mobile{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        margin-inline: auto;
+      }
+    }
+  }
+
+}
+
+
+
+.soft__content {
+
+  &-title {
+    padding-bottom: rem(13);
+  }
+
+  &-text {
+    line-height: 1.6;
+  }
+}
