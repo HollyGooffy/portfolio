@@ -1,0 +1,51 @@
+@use '../helpers' as *;
+
+.name{
+  margin-top: rem(150);
+  display: flex;
+  flex-direction: row;
+  column-gap: rem(122);
+  justify-content: start;
+
+  @include tablet {
+    margin-top: rem(90);
+  }
+
+  &__image{
+    @include tablet{
+      display: none;
+    }
+  }
+
+  &__image-dop{
+    display: none;
+    width: rem(232);
+    aspect-ratio: 1/1;
+    padding-top: rem(24);
+
+    @include tablet{
+      display: block;
+    }
+  }
+
+  @include tablet{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  &__text{
+
+    &-main{
+      font-weight: 400;
+      @include fluid-text(70,40)
+    }
+
+    &-subtitle{
+      margin-block: rem(27) rem(56);
+      font-weight: 300;
+      @include fluid-text(40, 24);
+    }
+  }
+}
+

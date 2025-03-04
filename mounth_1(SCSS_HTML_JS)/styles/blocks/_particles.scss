@@ -1,0 +1,12 @@
+@use '../helpers' as *;
+
+#particles-js{
+  background-position: 50% 50%;
+  background-repeat: repeat-y;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
