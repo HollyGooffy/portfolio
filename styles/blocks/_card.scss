@@ -7,11 +7,6 @@
   border: 1px solid var(--black);
   box-shadow: 1px 3px 26px 3px var(--black);
 
-  &__icon{
-    height: max-content;
-
-  }
-
   @include tablet{
     width: 100%;
     max-height: rem(189);
@@ -44,6 +39,7 @@
 
   &__content {
 
+
     &-title {
       margin-block: rem(15);
       color: var(--white);
@@ -52,8 +48,7 @@
 
       @include tablet{
         margin-block: rem(0);
-        padding-bottom: rem(8);
-        margin-top: rem(10);
+        padding-bottom: rem(0);
       }
     }
 

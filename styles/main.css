@@ -965,7 +965,8 @@ section:not(:last-child) {
 @media (width <= 73.1414285714rem) {
   .card__content-title {
     margin-block: 0rem;
-    padding-bottom: 1.3571428571rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
   }
 }
 .card__content-text {
