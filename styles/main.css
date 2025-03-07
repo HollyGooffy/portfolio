@@ -958,7 +958,7 @@ section:not(:last-child) {
   }
 }
 .card__content-title {
-  margin-block: 2rem;
+  margin-block: 1.1rem;
   color: var(--white);
   font-size: clamp(1.2857142857rem, 1.147579693rem + 0.4958677686vw, 1.7142857143rem);
 }
