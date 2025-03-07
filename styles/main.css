@@ -531,7 +531,6 @@ section:not(:last-child) {
 @media (width <= 73.1414285714rem) {
   .resume__tree-left {
     padding-bottom: 5.7142857143rem;
-    margin-left: 15px;
   }
 }
 @media (width <= 73.1414285714rem) {

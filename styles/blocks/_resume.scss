@@ -15,7 +15,6 @@
     position: relative;
 
     &-left {
-      position: relative;
 
       @include tablet {
         padding-bottom: rem(80);
@@ -63,8 +62,6 @@
     height: rem(215);
     position: relative;
     z-index: 1;
-
-
 
     @include tablet {
       width: 100%;
