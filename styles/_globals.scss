@@ -1,4 +1,4 @@
-@use 'helpers/index' as *;
+@use 'helpers' as *;
 
 main{
   z-index: 2000;
@@ -81,15 +81,7 @@ section{
   }
 }
 
-.btn-centre-dop{
-  @include hide;
-  display: none;
 
-  @include mobile{
-    display: block;
-    @include show;
-  }
-}
 
 .hero__inner > * {
   opacity: 0;

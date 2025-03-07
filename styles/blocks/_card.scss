@@ -1,4 +1,4 @@
-@use '../helpers/index' as *;
+@use '../helpers' as *;
 
 
 .card {
@@ -7,12 +7,9 @@
   border: 1px solid var(--black);
   box-shadow: 1px 3px 26px 3px var(--black);
 
-
-
   &__icon{
-    @include tablet{
-      display: none;
-    }
+    height: max-content;
+
   }
 
   @include tablet{
@@ -35,23 +32,28 @@
 
   &__inner {
     padding: rem(50) rem(52) rem(42) rem(37);
+    display: flex;
+    flex-direction: column;
 
     @include tablet{
       padding: rem(30) rem(20) rem(30) rem(21);
+      flex-direction: row-reverse;
+      justify-content: start;
     }
   }
 
   &__content {
 
     &-title {
-      margin-block: rem(28);
+      margin-block: rem(15);
       color: var(--white);
 
       @include fluid-text(24, 18);
 
       @include tablet{
         margin-block: rem(0);
-        padding-bottom: rem(19);
+        padding-bottom: rem(8);
+        margin-top: rem(10);
       }
     }
 
@@ -63,7 +65,10 @@
       @include fluid-text(18, 16)
     }
   }
+
+
 }
+
 
 .card__soft {
   background-color: var(--black-15);
@@ -75,7 +80,7 @@
 
 
   &-content {
-    padding: rem(41) rem(52) rem(59) rem(37);
+    padding: rem(41) rem(52) rem(36) rem(37);
 
     @include tablet{
       padding: rem(22) rem(22) rem(22) rem(22);

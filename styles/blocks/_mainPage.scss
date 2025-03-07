@@ -1,19 +1,14 @@
-@use '../helpers/index' as *;
+@use '../helpers' as *;
 
 .hero{
 
   &__content{
-    height: 100vh;
     overflow-y: hidden;
   }
 
   &__inner{
     padding-top: rem(224);
     flex-direction: column;
-
-    &-btn{
-      margin-bottom: 40px;
-    }
 
     @include flex-center();
     @include laptop{
@@ -25,6 +20,12 @@
     @include mobile{
       padding-top: rem(95);
     }
+
+    &-btn{
+      margin-bottom: 40px;
+    }
+
+
 
     &-socials{
       margin-top: rem(23);
