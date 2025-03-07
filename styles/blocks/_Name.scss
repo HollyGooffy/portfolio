@@ -22,6 +22,7 @@
     width: rem(232);
     aspect-ratio: 1/1;
     padding-top: rem(24);
+    border-radius: rem(10);
 
     @include tablet{
       display: block;

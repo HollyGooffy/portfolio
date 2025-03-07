@@ -1,10 +1,10 @@
 {
-  "name": "mounth_1(SCSS_HTML_JS)",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass-watch": "sass --watch mounth_1(SCSS_HTML_JS)",
+    "sass-watch": "sass --watch portfolio",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
