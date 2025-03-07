@@ -931,11 +931,7 @@ section:not(:last-child) {
   border: 1px solid var(--black);
   box-shadow: 1px 3px 26px 3px var(--black);
 }
-@media (width <= 73.1414285714rem) {
-  .card__icon {
-    display: none;
-  }
-}
+
 @media (width <= 73.1414285714rem) {
   .card {
     width: 100%;
