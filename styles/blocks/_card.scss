@@ -26,7 +26,7 @@
   }
 
   &__inner {
-    padding: rem(50) rem(52) rem(42) rem(37);
+    padding: rem(50) rem(52) rem(50) rem(37);
     display: flex;
     flex-direction: column;
 
@@ -72,7 +72,7 @@
 
 
   &-content {
-    padding: rem(41) rem(52) rem(36) rem(37);
+    padding: rem(35) rem(52) rem(36) rem(31);
 
     @include tablet{
       padding: rem(22) rem(22) rem(22) rem(22);
