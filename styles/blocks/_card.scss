@@ -47,7 +47,7 @@
       @include fluid-text(24, 18);
 
       @include tablet{
-        margin-block: rem(0);
+        margin-block: rem(4);
         padding-bottom: rem(0);
       }
     }

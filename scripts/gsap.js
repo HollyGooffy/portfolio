@@ -7,7 +7,6 @@ gsap.to(".hero__inner > *", {
     delay: 0.2
 });
 
-// Обработчик клика для кнопки
 document.querySelector('.hero__inner-btn').addEventListener('click', function(e) {
     e.preventDefault();
     const link = this.href;

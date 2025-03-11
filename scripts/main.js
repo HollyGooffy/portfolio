@@ -21,15 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
         toggler.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
     });
 
-    // Обработчики для ссылок меню
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             if (nav.classList.contains('mob-header__nav--open')) {
-                // Добавляем задержку для завершения анимации
                 e.preventDefault();
                 closeMenu();
 
-                // Переход по ссылке после анимации
                 setTimeout(() => {
                     window.location.href = e.target.href;
                 }, 300);
@@ -37,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Закрытие при клике вне меню (опционально)
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.mob-header') && nav.classList.contains('mob-header__nav--open')) {
             closeMenu();
@@ -45,3 +41,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// live typing
+const text = 'El Sacerdot';
+const text2 = 'Student and Developer';
+const typingTextElement = document.getElementById('typed-text');
+const typingTextElement2 = document.getElementById('typed-text2');
+
+
+let index = 0;
+
+const initialDelay = 700;
+
+function typeText() {
+    if (index < text.length) {
+        typingTextElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeText, 130);
+    } else {
+        index = 0;
+        setTimeout(typeText2, 300);
+    }
+}
+
+function typeText2() {
+    if (index < text2.length) {
+        typingTextElement2.textContent += text2.charAt(index);
+        index++;
+        setTimeout(typeText2, 110);
+    }
+}
+
+setTimeout(typeText, initialDelay);

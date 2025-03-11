@@ -353,6 +353,19 @@ section:not(:last-child) {
   transform-origin: left;
 }
 
+#typing-text::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 .hero__content {
   overflow-y: hidden;
 }
@@ -972,7 +985,7 @@ section:not(:last-child) {
 }
 @media (width <= 73.1414285714rem) {
   .card__content-title {
-    margin-block: 0rem;
+    margin-block: 0.2857142857rem;
     padding-bottom: 0rem;
   }
 }
