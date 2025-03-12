@@ -354,6 +354,7 @@ section:not(:last-child) {
 }
 
 #typing-text::after {
+  margin-left: -1.0714285714rem;
   content: "|";
   animation: blink 1s infinite;
 }

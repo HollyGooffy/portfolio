@@ -103,6 +103,7 @@ section{
 }
 
 #typing-text::after {
+  margin-left: rem(-15);
   content: '|';
   animation: blink 1s infinite;
 }
