@@ -405,7 +405,7 @@ section:not(:last-child) {
 }
 .hero__inner-title {
   display: inline-block;
-  font-size: clamp(3.8571428571rem, 3.4887839433rem + 1.3223140496vw, 5rem);
+  font-size: clamp(3.7142857143rem, 3.2998819362rem + 1.4876033058vw, 5rem);
 }
 .hero__inner-subtitle {
   color: var(--gray-60);
